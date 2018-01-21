@@ -8,6 +8,7 @@ const plugins = require('./plugins')
 const logger = require('./server/utils/logger')
 
 const server = new Hapi.Server()
+const db = require("./database")
 
 server.connection({
   port: config.get('app.port')
